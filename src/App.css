@@ -1,0 +1,242 @@
+.text {
+  font-family: 'Courier New', Courier, monospace;
+
+  color: aliceblue;
+  font-size: small;
+}
+
+.heading {
+  font-weight: 800;
+  text-shadow: 2px 2px 10px cyan;
+}
+.text-shadow {
+  text-shadow: 0px 0px 5px white;
+}
+.buton {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin: 0px;
+
+  background-color: rgba(255, 255, 255, 0.281);
+  backdrop-filter: blur(5px);
+
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 0px;
+  border-left: 5px solid rgba(0, 255, 255, 0);
+  border-right: 5px solid rgba(0, 255, 255, 0);
+}
+
+.buton:hover {
+  color: cyan;
+  border-left: 5px solid rgb(0, 110, 255);
+  border-right: 5px solid rgb(0, 110, 255);
+}
+.buton:active {
+  color: white;
+  border-left: 5px solid rgb(0, 110, 255);
+  border-right: 5px solid rgb(0, 110, 255);
+  box-shadow: 0px 0px 10px rgb(0, 110, 255);
+}
+
+.nav-bar {
+  height: 100px;
+
+  padding: 5px;
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+.stick {
+  position: sticky;
+  top: 100px;
+  z-index: 1;
+}
+@media (min-width: 700px) {
+  .nav-bar {
+    height: 50px;
+  }
+  .stick {
+    top: 50px;
+  }
+}
+
+.box {
+  padding: 5px;
+  background-color: rgba(153, 152, 152, 0.781);
+  backdrop-filter: blur(10px);
+  transition: 1s;
+  border-radius: 10px;
+}
+.box-shadow {
+  box-shadow: 0px 0px 30px cyan;
+}
+.box-shadow-dark {
+  box-shadow: 2px 2px 30px rgb(15, 15, 15);
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+.tube {
+  border-left: 5px solid rgb(0, 110, 255);
+  border-right: 5px solid rgb(0, 110, 255);
+  background-color: rgba(36, 36, 36, 0.349);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+.header {
+  background-color: darkcyan;
+  padding: 5px;
+  box-shadow: 0px 2px 10px darkslategrey;
+  border-radius: 5px;
+}
+.input {
+  border-radius: 20px;
+  border: 2px solid cyan;
+}
+.justify-text {
+  text-align: justify;
+}
+
+.bg-cyan {
+  background-color: darkturquoise;
+}
+.width-100 {
+  width: 100%;
+}
+
+.img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.dashboard:hover {
+  transform: scale(1.1);
+  border-radius: 30px;
+}
+.income:hover {
+  transform: scale(1.1);
+  border-radius: 30px;
+}
+.expenditure:hover {
+  transform: scale(1.1);
+
+  border-radius: 30px;
+}
+.img:hover {
+  transform: scale(1.1);
+  border-radius: 30px;
+}
+.top-animation {
+  position: relative;
+  transition: 0.5s;
+  animation: top 2s ease;
+}
+.bottom-animation {
+  position: relative;
+  transition: 0.5s;
+  animation: bottom 2s ease;
+}
+.right-animation {
+  position: relative;
+  transition: 0.5s;
+  animation: right 2s ease;
+}
+.left-animation {
+  position: relative;
+  transition: 0.5s;
+  animation: left 2s ease;
+}
+@keyframes top {
+  0% {
+    opacity: 0;
+    bottom: 100vh;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0vh;
+  }
+}
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    top: 100vh;
+  }
+  100% {
+    opacity: 1;
+    top: 0vh;
+  }
+}
+@keyframes right {
+  0% {
+    opacity: 0;
+    left: 100vw;
+  }
+  100% {
+    opacity: 1;
+    left: 0vw;
+  }
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    right: 100vw;
+  }
+  100% {
+    opacity: 1;
+    right: 0vw;
+  }
+}
+.bg-done {
+  background-image: url('https://raw.githubusercontent.com/sahilalam/SocialMediaProjectNodejs/master/src/public/Components/9.gif');
+}
+.bg-stars {
+  background: radial-gradient(transparent, black),
+    url('https://raw.githubusercontent.com/sahilalam/SocialMediaProjectNodejs/master/src/public/Components/ICONS/Source1.gif');
+  background-position: center;
+  background-size: cover;
+}
+.trending-image {
+  width: 100%;
+
+  border-radius: 10px;
+}
+.blog-image {
+  width: 100%;
+
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  background-position: center;
+}
+.width-fit {
+  width: fit-content;
+}
+.image-sm {
+  height: 20px;
+}
+.blog-body {
+  overflow-wrap: break-word;
+  font-weight: bold;
+}
+.blog-summary {
+  overflow-wrap: break-word;
+}
+.blog-title {
+  overflow-wrap: break-word;
+}
+.add-blog {
+  height: 60vh;
+}
+.filters {
+  width: fit-content;
+  height: fit-content;
+}
+#root {
+  background-position: center;
+  background-size: cover;
+}
