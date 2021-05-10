@@ -45,7 +45,8 @@ export default function AddNew() {
         cloudName: 'dohdwfkhg',
         uploadPreset: 'wivw5xnu',
         clientAllowedFormats: ['mp4'],
-        return_delete_token: true
+        return_delete_token: true,
+        async: true
       },
       (error, result) => {
         if (!error && result && result.event === 'success') {
@@ -104,6 +105,8 @@ export default function AddNew() {
     <div className="container-fluid p-0">
       <Row className="justify-content-center p-5 ">
         <Col xs="12" lg="6" className="tube box-shadow-dark">
+          Video Size should be less than 40mb and uploading a video will take
+          some time ,so do have some patience:)
           <button
             className="buton mt-5 mb-5"
             onClick={() => {

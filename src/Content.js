@@ -4,7 +4,7 @@ import { NavLink, BrowserRouter, Route, Redirect } from 'react-router-dom';
 import Trending from './Trending.js';
 import AddNew from './AddNew.js';
 import SingleBlog from './SingleBlog.js';
-import MyVideos from './MyBlogs.js';
+import MyVideos from './MyVideos.js';
 export default function Content() {
   return window.localStorage.access_token ? (
     <div>
