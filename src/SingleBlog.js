@@ -126,7 +126,7 @@ export default function SingleBlog(props) {
 
   return (
     <div className="container-fluid p-lg-5">
-      <Row className="justify-content-center box box-shadow-dark">
+      <Row className="justify-content-center tube p-2 box-shadow-dark">
         {!loading ? (
           <>
             <Col xs="12" className="mb-2 p-3">
