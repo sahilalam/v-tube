@@ -69,12 +69,12 @@ export default function AddNew() {
     event.preventDefault();
     setSubmit(true);
     setSpinner(true);
-
+    let tmp = category.toLowerCase();
     try {
       let date = new Date();
       let details = {
         title,
-        category,
+        category: tmp,
         description,
         video_url,
         thumbnail,

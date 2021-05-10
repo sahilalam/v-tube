@@ -17,7 +17,7 @@ export default function Trending() {
   let getData = async offset => {
     let d = await fetch(
       `https://v-tube-backend.herokuapp.com/get/videos/${offset}/${
-        category.length ? category : 0
+        category.length ? category.toLowerCase() : 0
       }/${from.length ? new Date(from) : 0}/${to.length ? new Date(to) : 0}/0`,
       {
         method: 'GET',
